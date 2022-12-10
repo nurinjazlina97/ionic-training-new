@@ -1,0 +1,10 @@
+{
+  "name": "ionic-training-new",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
