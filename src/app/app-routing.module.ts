@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./grid/grid.module').then( m => m.GridPageModule)
+  },
 ];
 
 @NgModule({
