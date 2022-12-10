@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label> Default Input </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Input with Placeholder </ion-label>
+      <ion-input placeholder="Enter company name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Input with value </ion-label>
+      <ion-input value="Form Tutorial"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Readonly Input </ion-label>
+      <ion-input value="Madison" [readonly]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Disable Input </ion-label>
+      <ion-input value="12345" [disabled]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Text Input </ion-label>
+      <ion-input maxlength="50" placheholder="Enter Text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Number Input </ion-label>
+      <ion-input type="number" placheholder="Enter Number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Password Input </ion-label>
+      <ion-input type="password" placheholder="Enter Password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Email Input </ion-label>
+      <ion-input type="email" ngModel email placheholder="Enter Email"></ion-input>
+      <ion-note slot="helper"> Enter a valid email </ion-note>
+      <ion-note slot="error">Invalid email </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label> Phone Number Input </ion-label>
+      <ion-input type="tel" placheholder="Enter Phone Number"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button [routerLink]="['/home']">Home</ion-button>
+
+</ion-content>
